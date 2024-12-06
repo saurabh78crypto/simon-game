@@ -1,0 +1,51 @@
+body {
+    background-color: #1c1c3c;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #game-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 20px;
+  }
+  
+  .btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.2s;
+  }
+  
+  .green { background-color: green; }
+  .red { background-color: red; }
+  .yellow { background-color: yellow; }
+  .blue { background-color: blue; }
+  
+  .btn:active {
+    opacity: 1;
+  }
+  
+  .pressed {
+    box-shadow: 0px 0px 20px white;
+    opacity: 1;
+  }
+  
